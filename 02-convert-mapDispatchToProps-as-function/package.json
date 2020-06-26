@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "npx webpack-dev-server --mode development --port 10010",
-    "codemod": "codemod --printer prettier  --plugin ../custom-babel-plugin.js src/"
+    "start": "npx webpack-dev-server --mode development --port 10011",
+    "codemod": "codemod --printer prettier  --plugin ./custom-babel-plugin.js src/"
   },
   "keywords": [],
   "author": "",
