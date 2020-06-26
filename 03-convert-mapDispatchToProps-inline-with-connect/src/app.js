@@ -44,7 +44,7 @@ class App extends Component {
     const { addition, subtraction, multiplication } = this.props;
     return (
       <div className="App">
-        <h1>Map dispatchToProps as object</h1>
+        <h1>Map dispatchToProps as inline with connect</h1>
         <h2> Multiplication: {multiplication} </h2>
         <h2> Addition: {addition} </h2>
         <h2> Subtraction: {subtraction} </h2>
@@ -59,14 +59,11 @@ const mapStateToProps = state=>{
   }
 }
 
-const mapdispatchToProps= {
+export default connect(mapStateToProps, {
   multiplication2: multiplication,
   ...multiplicationActions,
   addition2: addition,
   addition3: additionThree,
   subtraction2: subtraction,
   subtraction3: subThree
-};
-
-
-export default connect(mapStateToProps, mapdispatchToProps)(App);
+})(App);

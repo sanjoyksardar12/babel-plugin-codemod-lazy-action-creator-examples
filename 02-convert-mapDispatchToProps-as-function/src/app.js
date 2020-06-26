@@ -42,7 +42,7 @@ class App extends Component {
     const { addition, subtraction, multiplication } = this.props;
     return (
       <div className="App">
-        <h1>Action creator without lazy</h1>
+        <h1>Map dispatchToProps as function</h1>
         <h2> Multiplication: {multiplication} </h2>
         <h2> Addition: {addition} </h2>
         <h2> Subtraction: {subtraction} </h2>

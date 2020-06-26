@@ -33,7 +33,6 @@ exports.default = function ({ types: t }) {
           isConnectItselfContainingDeclaration
         } = getReturnStatement(path, mapDispatchToPropsNode);  //ObjectExpression|ArrowFunctionExpression|FunctionExpression
 
-        console.log("returnStatement", returnStatement);
         if(!returnStatement){
           return;
         }
@@ -48,7 +47,6 @@ exports.default = function ({ types: t }) {
       }
     },
     post(state){
-      // console.log("in post=====>>>>>>>>>>", this.cache);
     }
   };
 };
@@ -148,7 +146,6 @@ function getOriginalParams(t, prop, isMapDispatchToPropsObject) {
   return prop.node.value.params;
 
 }
-console.log('');
 
 
 function modifyReturnStatetmentWithDynamicImport(returnStatement, t, isMapDispatchToPropsObject, path) {
