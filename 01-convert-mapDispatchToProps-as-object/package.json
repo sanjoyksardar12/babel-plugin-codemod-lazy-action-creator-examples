@@ -20,6 +20,7 @@
     "@babel/preset-env": "^7.10.3",
     "@babel/preset-react": "^7.10.1",
     "babel-loader": "^8.0.2",
+    "babel-plugin-codemod-lazy-action-creator": "^1.0.2",
     "css-loader": "^1.0.0",
     "nodemon": "^2.0.4",
     "style-loader": "^0.23.0",

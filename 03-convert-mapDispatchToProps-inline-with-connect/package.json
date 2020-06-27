@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "npx webpack-dev-server --mode development --port 10012",
-    "codemod": "codemod --printer prettier  --plugin ../custom-babel-plugin.js src/"
+    "codemod": "codemod --printer prettier  --plugin babel-plugin-codemod-lazy-action-creator src/"
   },
   "keywords": [],
   "author": "",
@@ -20,6 +20,7 @@
     "@babel/preset-env": "^7.10.3",
     "@babel/preset-react": "^7.10.1",
     "babel-loader": "^8.0.2",
+    "babel-plugin-codemod-lazy-action-creator": "^1.0.2",
     "css-loader": "^1.0.0",
     "nodemon": "^2.0.4",
     "style-loader": "^0.23.0",
